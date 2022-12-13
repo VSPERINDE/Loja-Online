@@ -1,0 +1,389 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
+
+:root{
+   --green:#27ae60;
+   --orange:#f39c12;
+   --red:#e74c3c;
+   --black:#333;
+   --light-color:#666;
+   --white:#fff;
+   --light-bg:#f6f6f6;
+   --border:.2rem solid var(--black);
+   --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+body{
+    font-family: 'Source Sans Pro';
+    background: var(--light-bg);
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6.5rem;
+}
+
+section{
+    padding: 3rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.form-container{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ 
+.form-container form{
+    width: 50rem;
+    background-color: var(--white);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    border:var(--border);
+    text-align: center;
+    padding:2rem;
+}
+ 
+.form-container form h3{
+    font-size: 3rem;
+    color:var(--black);
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+ 
+.form-container form .box{
+    width: 90%;
+    margin:1rem 0;
+    border-radius: .5rem;
+    border:var(--border);
+    padding:1.2rem 1.4rem;
+    font-size: 1.8rem;
+    color:var(--black);
+    background-color: var(--light-bg);
+}
+ 
+.form-container form p{
+    margin-top: 2rem;
+    font-size: 2.2rem;
+    color:var(--light-color);
+}
+ 
+.form-container form p a{
+    color:var(--green);
+}
+ 
+.form-container form p a:hover{
+    text-decoration: underline;
+}
+
+.contato{
+    width: 80%;
+    margin:1rem 0;
+    border-radius: .5rem;
+    border:var(--border);
+    padding:1.2rem 1.4rem;
+    font-size: 1.8rem;
+    color:var(--black);
+    background-color: var(--light-bg);
+}
+
+.disabled{
+   user-select: none;
+   pointer-events: none;
+   opacity: .5;
+}
+ 
+.btn{
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+    border-radius: .5rem;
+    color:var(--white);
+    font-size: 2rem;
+    padding:1.3rem 3rem;
+    text-transform: capitalize;
+    cursor: pointer;
+    text-align: center;
+}
+ 
+.btn{
+    background-color: var(--red);
+}
+ 
+ 
+.btn:hover{
+    background-color: var(--black);
+}
+ 
+
+.mensagem{
+    position: sticky;
+    top:0;
+    max-width: 1200px;
+    margin:0 auto;
+    background-color: var(--light-bg);
+    padding:2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:1.5rem;
+    z-index: 10000;
+}
+
+.mensagem span{
+   font-size: 2rem;
+   color:var(--black);
+}
+
+.mensagem i{
+   font-size: 2.5rem;
+   cursor: pointer;
+   color:var(--red);
+}
+
+.mensagem i:hover{
+   color:var(--black);
+}
+
+h1{
+    float: left;
+    margin-top: auto;
+    padding-left: 5px;
+    padding-top: 10px;
+}
+
+#nav {
+   background: #fff;
+   border-bottom: 2px solid #d8d8d8;
+   height: auto;
+   position:fixed;
+   width: 100%;
+   top:0;
+   margin-right: 20px;
+}
+
+.area-principal {
+    background: #bc2d1a;
+    border-bottom: 2px solid #d8d8d8;
+    margin-top: 8%;
+    font-size: 20px;
+    padding: 10px;
+    top:8%;
+}
+.logo{
+    font-size: 20px;
+    margin: 40px 0;
+    font-weight: 400;
+}
+.menu {
+	float: right;
+	padding: 20px 10px;
+    font-size: 20px;
+    margin-right: 20px;
+}
+ol.menu, ol.menu ol{
+    list-style-type: none;
+    padding: 0;
+}
+ol.menu > li {
+    float: left;
+    margin-left: -1px;
+}
+ol.menu li{
+    width: auto;
+}
+ol.menu > li > ol{
+    margin-top: 2.5px;
+    margin-left: -1px;
+}
+ol.menu li li {
+    margin-top: -1px;
+}
+
+ol.menu ol ol {
+    margin-left: 100%;
+    margin-top: -19.5px;
+}
+ol.menu ol {
+    display: none;
+}
+
+ol.menu li:hover > ol{
+    display: block;
+}
+
+ol.menu li {
+	text-decoration: none;
+	padding: 5px 10px;
+}
+ol.menu li:link {
+	color: #020202;
+}
+
+ol.menu li:visited {
+	color: #000000;
+}
+
+ol.menu li:hover {
+	color: #fff;
+	background: #c96741;
+}
+
+ol.menu li:active {
+	color: #696969;
+}
+
+a:link {
+	color: #020202;
+}
+
+a:visited {
+	color: #000000;
+}
+
+a:hover {
+	color: #fff;
+	background: #c96741;
+}
+
+a:active {
+	color: #696969;
+}
+
+.produto {
+    border: 1px solid #ddd;
+    float: left;
+    font-size: 18px;
+    margin-top: 40px;
+    padding: 10px;
+}
+
+.produto:hover {
+	color: #fff;
+	background: #c96741;
+}
+
+
+.img-postagem{
+	float: left;
+	margin:0 10px 5px 0;
+}
+
+.produto-sel{
+    border: 1px solid #ddd;
+    float: left;
+    font-size: 18px;
+    margin-top: 40px;
+    padding: 10px;
+    position: relative;
+}
+.produto-sel ins {
+    color: #bc2d1a;
+    font-weight: 700;
+    margin-right: 5px;
+    text-decoration: none;
+}
+
+.produto-add {
+    margin-top: 15px;
+}
+
+.add-botao {
+    background: none repeat scroll 0 0 #bc2d1a;
+    border: medium none;
+    color: #fff;
+    padding: 6px 25px;
+    display: inline-block
+}
+  
+.quantidade {            
+    border: none;
+    text-align: center;
+    width: 32px;
+    height: 25px;
+    font-size: 16px;
+    color: #43484D;
+    font-weight: 300;
+}
+.botao {
+    width: 30px;
+    height: 30px;
+    background-color: #bc2d1a;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+.botao-confirma{
+    background: none repeat scroll 0 0 #1fbc1a;
+    border: medium none;
+    color: #fff;
+    padding: 6px 25px;
+    display: inline-block
+}
+
+#TabelaCarrinho {
+    width: 100%;
+    border: none;
+    border-spacing:0px;
+    margin: auto;
+    padding: 10px;
+    font-size: 18px;
+}
+
+#TabelaCarrinho th {
+    border-bottom: 1px solid #cdcdcd;
+}
+
+#TabelaCarrinho td, th {
+    padding:5px;
+}
+
+#TabelaCarrinho .produto-cart {
+    text-align:left;
+    width: 10%;
+}
+
+#TabelaCarrinho .descricao {
+    text-align:left;
+    width: 50%;
+}
+
+#TabelaCarrinho .preco {
+    text-align:right;
+    width: 20%;
+}
+
+#TabelaCarrinho .carrinhoTotal td {
+    margin-top: 10px;
+    border-top: 1px solid #cdcdcd;
+    text-align:right;
+    font-weight:bold;
+}
+
+@media (max-width:991px){
+
+    html{
+       font-size: 55%;
+    }
+    
+ }
+ 
+ @media (max-width:768px){
+ 
+ 
+ }
+ 
+ @media (max-width:450px){
+ 
+    html{
+       font-size: 50%;
+    }
+ 
+    .title{
+       font-size: 3rem;
+    }
+    
+ }
